@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endura Alert Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f1f8e9;
+            margin: 0; padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 {
+            color: #388e3c;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+        }
+        input[type='password'] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button.login {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .item {
+            flex: 1 1 45%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px;
+        }
+        .item span {
+            font-size: 14px;
+            color: #333;
+        }
+        .item a {
+            padding: 5px 10px;
+            background: #4caf50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ENDURA</h1>
+        <p>Chemistry Innovations - Alert Dashboard</p>
+        <input type="password" id="password" placeholder="Enter password">
+        <button class="login" onclick="authenticate()">Login</button>
+
+        <div id="content" style="display:none;">
+            <div class="section">
+                <div class="item"><span>Piperonyl Butoxide</span><a href="https://www.google.com/alerts?hl=en&q=Piperonyl+Butoxide" target="_blank">Go</a></div>
+                <div class="item"><span>Insecticide Synergist Market</span><a href="https://www.google.com/alerts?hl=en&q=insecticide+synergist+market" target="_blank">Go</a></div>
+                <div class="item"><span>Biocidal Products Europe</span><a href="https://www.google.com/alerts?hl=en&q=biocidal+products+regulation+Europe" target="_blank">Go</a></div>
+                <div class="item"><span>Pyrethroid Trends</span><a href="https://www.google.com/alerts?hl=en&q=pyrethroid+insecticides+trends" target="_blank">Go</a></div>
+            </div>
+            <div class="section">
+                <div class="item"><span>Scholar: Piperonyl Butoxide</span><a href="https://scholar.google.com/scholar?q=Piperonyl+Butoxide" target="_blank">Go</a></div>
+                <div class="item"><span>Scholar: Synergist Formulation</span><a href="https://scholar.google.com/scholar?q=insecticide+synergist+formulation" target="_blank">Go</a></div>
+                <div class="item"><span>Scholar: Biocidal Development</span><a href="https://scholar.google.com/scholar?q=biocidal+formulation+development" target="_blank">Go</a></div>
+            </div>
+            <div class="section">
+                <div class="item"><span>Endura S.p.A.</span><a href="https://www.linkedin.com/company/endura-s-p-a-/" target="_blank">Go</a></div>
+                <div class="item"><span>MGK Insect Control</span><a href="https://www.linkedin.com/company/mgk-insect-control/" target="_blank">Go</a></div>
+                <div class="item"><span>SC Johnson</span><a href="https://www.linkedin.com/company/sc-johnson/" target="_blank">Go</a></div>
+                <div class="item"><span>Croda International</span><a href="https://www.linkedin.com/company/croda/" target="_blank">Go</a></div>
+                <div class="item"><span>Symrise AG</span><a href="https://www.linkedin.com/company/symrise-ag/" target="_blank">Go</a></div>
+                <div class="item"><span>BASF Agri Solutions</span><a href="https://www.linkedin.com/company/basf-ag/" target="_blank">Go</a></div>
+                <div class="item"><span>ECHA</span><a href="https://www.linkedin.com/company/european-chemicals-agency/" target="_blank">Go</a></div>
+            </div>
+            <div class="section">
+                <div class="item"><span>C&EN</span><a href="https://cen.acs.org" target="_blank">Go</a></div>
+                <div class="item"><span>CEFIC</span><a href="https://cefic.org" target="_blank">Go</a></div>
+                <div class="item"><span>Agropages</span><a href="https://news.agropages.com" target="_blank">Go</a></div>
+                <div class="item"><span>ChemLinked</span><a href="https://chemlinked.com" target="_blank">Go</a></div>
+                <div class="item"><span>PAN International</span><a href="http://pan-international.org" target="_blank">Go</a></div>
+            </div>
+            <div class="section">
+                <div class="item"><span>Download PDF Guide</span><a href="Interactive_Guide_Alerts_Endura_EN.pdf" download>Download</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function authenticate() {
+            const pwd = document.getElementById('password').value;
+            if (pwd === 'endura123') {
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
